@@ -1,0 +1,19 @@
+.hero-img {
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 2.5%;
+}
+
+@media (min-width: 600px) {
+  .hero-img {
+    max-height: 500px;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero-img {
+    max-height: none;
+    width: 400px;
+    height: 400px;
+  }
+}

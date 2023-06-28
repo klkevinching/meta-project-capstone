@@ -6,6 +6,8 @@
   --txt-lightgrey: #EDEFEE;
   --txt-darkgrey: #333333;
   --txt-white: #FFFFFF;
+  --grid-md: 600px;
+  --grid-lg: 900px;
 }
 
 body {
@@ -19,10 +21,6 @@ body {
 
 img {
   width: 100%;
-}
-
-main h1 {
-  color: var(--txt-primary);
 }
 
 .txt-primary {
@@ -52,3 +50,4 @@ main h1 {
 .txt-white {
   color: var(--txt-white);
 }
+

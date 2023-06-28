@@ -22,10 +22,6 @@ function Nav(props) {
   // Nav Item
   const navData = props.navData
 
-  const navElement = navData.map(data => {
-    return <li key={data.name}>{data.name}</li>
-  })
-
   // Drawer
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -37,7 +33,7 @@ function Nav(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        Little Lemon
       </Typography>
       <Divider />
       <List>
@@ -54,13 +50,12 @@ function Nav(props) {
 
   const container = window !== undefined ? () => window().document.body : undefined;
 
-
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar component="nav" color="customwhite" sx={{boxShadow: 0}}>
         <Container>
-          <Toolbar>
+          <Toolbar disableGutters={true}>
             <IconButton
               color="customdarkgrey"
               aria-label="open drawer"
@@ -73,9 +68,9 @@ function Nav(props) {
             <Box
               sx={{
                 maxWidth: 150,
-                mr: 'auto',
-                display: { xs: 'none', md: 'block' },
-                color: "customsalmon.main"
+                ml: {xs: "auto", md: "0"},
+                mr: "auto",
+                pt: "5px",
               }}
             >
               <img src="/images/logo_h.png" alt="Little Lemon Logo" />
