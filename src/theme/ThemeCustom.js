@@ -19,6 +19,7 @@ const theme = createTheme({
     },
     customdarkgrey: {
       main: '#333333',
+      light: '#8b8b8b',
     },
     customwhite: {
       main: '#FFFFFF',

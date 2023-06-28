@@ -17,11 +17,38 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img {
+  width: 100%;
 }
 
 main h1 {
   color: var(--txt-primary);
+}
+
+.txt-primary {
+  color: var(--txt-primary);
+}
+
+.txt-secondary {
+  color: var(--txt-secondary);
+}
+
+.txt-salmon {
+  color: var(--txt-salmon);
+}
+
+.txt-peachpuff {
+  color: var(--txt-peachpuff);
+}
+
+.txt-lightgrey {
+  color: var(--txt-lightgrey);
+}
+
+.txt-darkgrey {
+  color: var(--txt-darkgrey);
+}
+
+.txt-white {
+  color: var(--txt-white);
 }

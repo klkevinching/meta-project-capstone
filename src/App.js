@@ -6,23 +6,29 @@ import ThemeCustom from './theme/ThemeCustom'
 function App() {
   const navData = [
     {
-      name: 'Home'
+      name: 'Home',
+      link: '/',
     },
     {
-      name: 'About'
+      name: 'About',
+      link: '/about',
     },
     {
-      name: 'Menu'
+      name: 'Menu',
+      link: '/menu',
     },
     {
-      name: 'Reservations'
+      name: 'Reservations',
+      link: '/reservations',
     },
     {
-      name: 'Order Online'
+      name: 'Order Online',
+      link: '/orderonline',
     },
     {
-      name: 'Login'
-    }
+      name: 'Login',
+      link: '/login',
+    },
   ]
 
   return (
