@@ -71,7 +71,7 @@ const TestmlRating = styled(Rating)({
 
 function Hero() {
   return(
-    <Sectioncontainer txtColor="customwhite.main" bgColor="primary.main">
+    <Sectioncontainer txtColor="common.white" bgColor="primary.main">
       <Container>
         <Box
           sx={{
@@ -84,10 +84,10 @@ function Hero() {
               <Typography component="h1" variant="displayTitle" sx={{ color: "secondary.main", lineHeight: "1" }}>
                 Little Lemon
               </Typography>
-              <Typography component="h2" variant="subTitle" sx={{ color: "xcustomwhite.main" }}>
+              <Typography component="h2" variant="subTitle">
                 Chicago
               </Typography>
-              <Typography component="p" variant="leadText" sx={{ color: "xcustomwhite.main", pt: "2rem", pb: "1.5rem" }}>
+              <Typography component="p" variant="leadText" sx={{ pt: "2rem", pb: "1.5rem" }}>
                 We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
               </Typography>
               <Button component={Link} to={'/reservations'} variant="contained" color="secondary">Reserve a Table</Button>
@@ -161,7 +161,7 @@ function Testimonials() {
         <Grid container sx={{ mt: "2rem" }} className="testml-review">
           {
             testmlData.map(item => (
-              <Grid component="article" items xs={12} sm={6} lg={3} sx={{ px: "1.5rem", py: "1rem", mb: "2rem" }}>
+              <Grid component="article" item key={item.name} xs={12} sm={6} lg={3} sx={{ px: "1.5rem", py: "1rem", mb: "2rem" }}>
                 <Box sx={{ display: "flex", alignItems: "center", mb: ".75rem" }}>
                   <Box sx={{ mr: "1rem" }}>
                     <Avatar alt="Remy Sharp" src={item.image} sx={{ width: 72, height: 72 }} />
@@ -189,7 +189,28 @@ function Testimonials() {
 function Aboutus() {
   return(
     <Sectioncontainer txtColor="common.black" bgColor="common.white">
-      
+      <Container>
+        <Grid container spacing={4} sx={{ alignItems: "center" }}>
+          <Grid item xs={12} md={5} lg={6}>
+            <Typography component="h1" variant="displayTitle" sx={{ color: "primary.main" }}>
+              About Us
+            </Typography>
+            <Typography sx={{ mt: "2rem" }}>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit, duis nisi interdum quam himenaeos fermentum, turpis ridiculus sem orci molestie vulputate. Proin quisque vel tempor ridiculus montes ultrices duis, molestie fringilla eu at tincidunt sodales, nullam faucibus nisl euismod vitae laoreet.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={7} lg={6}>
+            <div className="about-img">
+              <div className="about-img__item about-img__item--top">
+                <img src="/images/About-top.jpg" alt="Photo of our professional team of chef"/>
+              </div>
+              <div className="about-img__item about-img__item--bottom">
+                <img src="/images/About-bottom.jpg" alt="Photo of our professional team of chef" />
+              </div>
+            </div>
+          </Grid>
+        </Grid>
+      </Container>
     </Sectioncontainer>
   )
 }

@@ -39,3 +39,23 @@
   }
 }
 
+.about-img {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+}
+
+.about-img img {
+  border-radius: 2.5%;
+}
+
+.about-img__item--top {
+  grid-column: 5 / span 7;
+  grid-row: 1 / span 6;
+  z-index: 1;
+}
+
+.about-img__item--bottom {
+  grid-column: 1 / span 7;
+  grid-row: 2 / span 6;
+}
