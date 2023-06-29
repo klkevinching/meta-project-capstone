@@ -77,7 +77,7 @@ function Nav(props) {
             </Box>
             <Box sx={{ display: { xs: 'none', md: 'block' } }}>
               {navData.map((item) => (
-                <Button key={item.name} component={Link} to={item.link} sx={{ color: "customdarkgrey.main"}}>
+                <Button key={item.name} component={Link} to={item.link} sx={{ color: "customdarkgrey.main", fontSize: "18px" }}>
                   {item.name}
                 </Button>
               ))}
