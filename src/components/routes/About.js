@@ -1,7 +1,9 @@
+import Construction from "../Construction";
+
 function About() {
   return (
     <>
-      <h1>About</h1>
+      <Construction pageName="About" />
     </>
   );
 }

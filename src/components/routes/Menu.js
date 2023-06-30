@@ -1,7 +1,9 @@
+import Construction from "../Construction";
+
 function Menu() {
   return (
     <>
-      <h1>Menu</h1>
+      <Construction pageName="Menu" />
     </>
   );
 }

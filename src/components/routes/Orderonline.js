@@ -1,7 +1,9 @@
+import Construction from "../Construction";
+
 function Orderonline() {
   return (
     <>
-      <h1>Order Online</h1>
+      <Construction pageName="Order Online" />
     </>
   );
 }
